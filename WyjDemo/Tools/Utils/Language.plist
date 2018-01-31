@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>jianti</key>
+	<dict>
+		<key>kankan</key>
+		<string>看看</string>
+		<key>xiaoxi</key>
+		<string>消息</string>
+		<key>chushou</key>
+		<string>出售</string>
+		<key>wode</key>
+		<string>我的</string>
+	</dict>
+	<key>fanti</key>
+	<dict>
+		<key>kankan</key>
+		<string>看看</string>
+		<key>xiaoxi</key>
+		<string>消息</string>
+		<key>chushou</key>
+		<string>出售</string>
+		<key>wode</key>
+		<string>我的</string>
+	</dict>
+</dict>
+</plist>

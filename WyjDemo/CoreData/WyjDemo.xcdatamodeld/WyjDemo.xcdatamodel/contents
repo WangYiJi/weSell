@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="9525" systemVersion="15D21" minimumToolsVersion="Automatic">
+    <entity name="ChatContactsEntity" representedClassName="ChatContactsEntity" syncable="YES">
+        <attribute name="lastMsg" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="lastTime" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="logoName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="owner" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="userId" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="userName" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="historyShip" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="ChatHistoryEntity" inverseName="contactsShip" inverseEntity="ChatHistoryEntity" syncable="YES"/>
+    </entity>
+    <entity name="ChatHistoryEntity" representedClassName="ChatHistoryEntity" syncable="YES">
+        <attribute name="isImg" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="isLocal" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="msg" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="msgId" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="owner" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="sendTime" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="userFromId" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="userFromName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="userToId" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="userToName" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="contactsShip" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="ChatContactsEntity" inverseName="historyShip" inverseEntity="ChatContactsEntity" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="ChatContactsEntity" positionX="-63" positionY="9" width="128" height="150"/>
+        <element name="ChatHistoryEntity" positionX="-36" positionY="72" width="128" height="210"/>
+    </elements>
+</model>
